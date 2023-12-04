@@ -14,7 +14,7 @@ FROM docker.io/library/registry:2.8@sha256:41f413c22d6156587e2a51f3e80c09808b8c7
 
 FROM docker.io/bitnami/kubectl:1.27@sha256:670fe3f50d45c0511bb0f2af018e2fc082ac8cdfaea02dba4e32866296036926 as kubectl
 
-FROM docker.io/library/ubuntu:22.04@sha256:ac58ff7fe25edc58bdf0067ca99df00014dbd032e2246d30a722fa348fd799a5
+FROM docker.io/library/ubuntu:22.04@sha256:8eab65df33a6de2844c9aefd19efe8ddb87b7df5e9185a4ab73af936225685bb
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN  apt-get update && apt-get install --fix-missing -y \
